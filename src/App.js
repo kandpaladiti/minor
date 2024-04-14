@@ -7,9 +7,11 @@ import Footer from './components/Common/Footer';
 import UserLoginPage from './pages/User/UserLoginPage';
 import UserSignupPage from './pages/User/UserSignupPage';
 import AdminLoginPage from './pages/Admin/AdminLoginPage';
-import UserDashboard from './components/UserDashboard/MarksForm';
-import AdminDashboard from './components/AdminDashboard/AdminPanel';
-
+import UserDashboard from './components/UserDashboard/UserDashboard';
+import AdminPanel from './components/AdminDashboard/AdminPanel';
+import MarksForm from './components/UserDashboard/MarksForm';
+import ViewMarks from './components/UserDashboard/ViewMarks';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
           <Route path="/user/signup" component={UserSignupPage} />
           <Route path="/admin/login" component={AdminLoginPage} />
           <Route path="/user/dashboard" component={UserDashboard} />
-          <Route path="/admin/dashboard" component={AdminDashboard} />
+          <Route path="/admin/dashboard" component={AdminPanel} />
+          <Route path="/user/marksform" component={MarksForm} />
+          <Route path="/user/viewmarks" component={ViewMarks} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
