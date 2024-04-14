@@ -1,0 +1,41 @@
+{
+    "indexes": [
+      {
+        "collectionGroup": "users",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "email",
+            "order": "ASCENDING"
+          }
+        ]
+      },
+      {
+        "collectionGroup": "marks",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "subject1",
+            "order": "DESCENDING"
+          },
+          {
+            "fieldPath": "subject2",
+            "order": "DESCENDING"
+          },
+          {
+            "fieldPath": "subject3",
+            "order": "DESCENDING"
+          },
+          {
+            "fieldPath": "subject4",
+            "order": "DESCENDING"
+          },
+          {
+            "fieldPath": "subject5",
+            "order": "DESCENDING"
+          }
+        ]
+      }
+    ]
+  }
+  
